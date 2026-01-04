@@ -1,0 +1,39 @@
+{
+  "slug": "ideabench",
+  "name": "IdeaBench",
+  "tagline": "Discover your next million-dollar idea",
+  "snapshot": {
+    "peak_mrr": 0,
+    "total_users": 0,
+    "raised": 0,
+    "duration": {
+      "start": "Aug 2025",
+      "end": "Sep 2025"
+    }
+  },
+  "author": {
+    "name": "VulcanWM",
+    "bio": "solo developer building and shipping ideas fast, learning by failing"
+  },
+  "death": {
+    "reason": "better alternatives exist"
+  },
+  "tech_stack": [
+    "next.js",
+    "stripe",
+  ],
+  "links": {
+    "source_code": "https://github.com/VulcanWM/ideabench",
+  },
+  "story": {
+    "idea": "The goal was to help founders skip brainstorming by giving them a curated list of startup ideas with analysis on monetisation potential, competition, and ease of build. Instead of staring at a blank page, users could pick an idea and start building immediately.",
+    "what_went_wrong": "The problem wasn’t demand for ideas, it was differentiation. Founders already had access to idea lists, newsletters, twitter threads, reddit, and free tools that did roughly the same thing. IdeaBench didn’t feel meaningfully better than what already existed, especially not enough to justify paying. Most users browsed the preview, nodded, and left.",
+    "lessons_learned": [
+      "Competition matters more than idea quality",
+      "People rarely pay for information they believe they can get for free",
+      "A landing page with interest is not the same as willingness to pay",
+      "Distribution is a product, not an afterthought"
+    ],
+    "whats_next": "Moving away from generic idea validation tools and focusing on products with built-in distribution or clear pain felt daily. Next time, I’ll test pricing and differentiation before writing the full product."
+  }
+}
