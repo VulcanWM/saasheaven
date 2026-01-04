@@ -9,8 +9,8 @@ Thank you for contributing! Please follow this checklist to ensure your submissi
 
 2. Files Included
 Your submission should include:
-post-mortems/<slug>/data.json
-post-mortems/<slug>/README.md (optional)
+- post-mortems/<slug>/data.json
+- post-mortems/<slug>/README.md (optional)
 
 - [ ] data.json matches the JSON schema in schema.json
 - [ ] All required fields (slug, name, snapshot, author, death, tech_stack, story, links) are filled
