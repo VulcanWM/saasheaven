@@ -16,14 +16,14 @@
     "bio": "solo developer building and shipping ideas fast, learning by failing"
   },
   "death": {
-    "reason": "better alternatives exist"
+    "reason": "Better Alternatives Exist"
   },
   "tech_stack": [
-    "next.js",
-    "stripe",
+    "Next.js",
+    "Stripe",
   ],
   "links": {
-    "source_code": "https://github.com/VulcanWM/ideabench",
+    "source_code": "https://github.com/VulcanWM/idea-bench",
   },
   "story": {
     "idea": "The goal was to help founders skip brainstorming by giving them a curated list of startup ideas with analysis on monetisation potential, competition, and ease of build. Instead of staring at a blank page, users could pick an idea and start building immediately.",
