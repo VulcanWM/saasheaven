@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Github } from "lucide-react"
+import Link from "next/link"
 
 export default function Page() {
   const [mounted, setMounted] = useState(false)
@@ -73,15 +74,21 @@ export default function Page() {
                 <br />
                 HEAVEN
               </h1>
-              <p className="mt-1 font-mono text-xs uppercase tracking-wider text-neutral-600">EST. 2024</p>
+              <p className="mt-1 font-mono text-xs uppercase tracking-wider text-neutral-600">EST. 2026</p>
             </div>
-            <Button
-              variant="outline"
-              size="sm"
-              className="border-2 border-black font-mono text-xs font-bold uppercase bg-transparent"
-            >
-              GITHUB
-            </Button>
+              <a
+                  href="https://github.com/VulcanWM/saasheaven"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                  <Button
+                      variant="outline"
+                      size="sm"
+                      className="border-2 border-black font-mono text-xs font-bold uppercase bg-transparent"
+                  >
+                      github
+                  </Button>
+              </a>
           </div>
         </div>
       </header>
@@ -112,13 +119,15 @@ export default function Page() {
                 Real founders. Real failures. Real code. Indie makers share their projects that didn't make it—with
                 honest post-mortems and full source code so you can learn from their mistakes.
               </p>
-              <Button
-                size="lg"
-                className="h-14 w-full border-2 border-black bg-black font-mono text-sm font-bold uppercase text-white hover:bg-neutral-900"
-              >
-                READ POST-MORTEMS
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link href="/github">
+                    <Button
+                        size="lg"
+                        className="h-14 w-full border-2 border-black bg-black font-mono text-sm font-bold uppercase text-white hover:bg-neutral-900"
+                    >
+                        READ POST-MORTEMS
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+              </Link>
             </div>
 
             <div className="border-4 border-black bg-black p-6 text-white">
