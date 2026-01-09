@@ -6,11 +6,6 @@ SaaS Heaven is a living archive of failed SaaS projects. Our mission is simple:
 
 Every post-mortem on this site includes:
 
-* Honest stats (MRR, users, duration)
-* The story of what went wrong
-* Lessons learned to guide future founders
-* Links to the source code so you can explore, fork, or repurpose
-
 ---
 
 ## Browse Failures
@@ -30,79 +25,6 @@ We welcome new post-mortems! To submit one:
 5. Open a Pull Request using our [PR template](./.github/PULL_REQUEST_TEMPLATE.md)
 
 **Note:** the `slug` must be lowercase, hyphenated, and unique.
-
----
-
-## API
-
-SaaS Heaven provides a simple read-only API to fetch post-mortems.
-
-**Get all post-mortems**
-
-```
-GET /api/post-mortems
-```
-
-**Response**
-
-* 200 OK – returns a list of all post-mortems with metadata
-
-**Example**
-
-```json
-{
-  "updated_at": "2026-01-09T17:30:00.000Z",
-  "count": 12,
-  "post_mortems": [
-    {
-      "slug": "failing-startup",
-      "name": "Failing Startup",
-      "tagline": "A short-lived saas project",
-      "snapshot": {
-        "peak_mrr": 1200,
-        "total_users": 450,
-        "raised": 50000
-      },
-      "lessons": [
-        "focused too much on features, not market",
-        "launched too early"
-      ]
-    }
-  ]
-}
-```
-
-**Get a post-mortem by slug**
-
-```
-GET /api/post-mortems/[slug]
-```
-
-**Response**
-
-* 200 OK – returns the post-mortem data in JSON
-* 404 Not Found – if the slug doesn’t exist
-
-**Example**
-
-```json
-GET /api/post-mortems/failing-startup
-
-{
-  "slug": "failing-startup",
-  "name": "Failing Startup",
-  "tagline": "A short-lived SaaS project",
-  "snapshot": {
-    "peak_mrr": 1200,
-    "total_users": 450,
-    "raised": 50000
-  },
-  "lessons": [
-    "focused too much on features, not market",
-    "launched too early"
-  ]
-}
-```
 
 ---
 
