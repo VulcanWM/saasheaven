@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Github } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { getAllPostMortemsData } from "@/lib/github"
+import NewsletterAd from "@/components/newsletter-ad"
+import { SiGithub } from "react-icons/si"
 
 export default async function Page() {
     const allProjects = await getAllPostMortemsData()
@@ -30,7 +32,7 @@ export default async function Page() {
                                 size="sm"
                                 className="border-2 border-black font-mono text-xs font-bold uppercase bg-transparent"
                             >
-                                <Github className="mr-2 h-4 w-4" />
+                                <SiGithub className="mr-2 h-4 w-4" />
                                 GITHUB
                             </Button>
                         </Link>
@@ -174,6 +176,14 @@ export default async function Page() {
             </section>
 
             <section className="border-b-4 border-black bg-white">
+                <div className="container mx-auto px-4 py-12">
+                    <div className="mx-auto max-w-xl">
+                        <NewsletterAd />
+                    </div>
+                </div>
+            </section>
+
+            <section className="border-b-4 border-black bg-white">
                 <div className="container mx-auto px-4 py-20">
                     <h3 className="mb-16 border-l-8 border-black pl-6 font-sans text-5xl font-black uppercase tracking-tighter md:text-7xl">
                         HOW IT
@@ -255,7 +265,7 @@ export default async function Page() {
                                     variant="outline"
                                     className="h-16 w-full border-4 border-white bg-black px-8 font-mono text-base font-bold uppercase text-white hover:bg-neutral-900"
                                 >
-                                    <Github className="mr-2 h-5 w-5" />
+                                    <SiGithub className="mr-2 h-5 w-5" />
                                     BROWSE PROJECTS
                                 </Button>
                             </Link>

@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { getAllPostMortemsData } from "@/lib/github"
 import PostMortemsClient from "./post-mortems-client"
-import {Github} from "lucide-react";
+import {SiGithub} from "react-icons/si";
 
 export default async function PostMortemsPage() {
     // Fetch all post-mortems from GitHub
@@ -22,7 +22,7 @@ export default async function PostMortemsPage() {
                             size="sm"
                             className="border-2 border-black font-mono text-xs font-bold uppercase bg-transparent"
                         >
-                            <Github className="mr-2 h-4 w-4" />
+                            <SiGithub className="mr-2 h-4 w-4" />
                             GITHUB
                         </Button>
                     </Link>
