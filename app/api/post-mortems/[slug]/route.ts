@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 import { getPostMortemData } from "@/lib/github"
 
 export async function GET(_req: Request, { params }: { params: Promise<{ slug: string }> }) {
-    const { slug } = await params  // await here
+    const { slug } = await params
 
     const data = await getPostMortemData(slug)
 

@@ -5,7 +5,6 @@ import PostMortemsClient from "./post-mortems-client"
 import {SiGithub} from "react-icons/si";
 
 export default async function PostMortemsPage() {
-    // Fetch all post-mortems from GitHub
     const postMortemsData = await getAllPostMortemsData()
 
     return (

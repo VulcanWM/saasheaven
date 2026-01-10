@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { getAllPostMortemSlugs, getPostMortemData } from "@/lib/github"
-import {Github} from "lucide-react";
+import { SiGithub } from "react-icons/si";
 
 export async function generateStaticParams() {
     const slugs = await getAllPostMortemSlugs()
@@ -29,7 +29,7 @@ export default async function PostMortemDetailPage({ params }: { params: Promise
                                 size="sm"
                                 className="border-2 border-black font-mono text-xs font-bold uppercase bg-transparent"
                             >
-                                <Github className="mr-2 h-4 w-4" />
+                                <SiGithub className="mr-2 h-4 w-4" />
                                 GITHUB
                             </Button>
                         </Link>
@@ -80,7 +80,7 @@ export default async function PostMortemDetailPage({ params }: { params: Promise
                             size="sm"
                             className="border-2 border-black font-mono text-xs font-bold uppercase bg-transparent"
                         >
-                            <Github className="mr-2 h-4 w-4" />
+                            <SiGithub className="mr-2 h-4 w-4" />
                             GITHUB
                         </Button>
                     </Link>

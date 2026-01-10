@@ -60,21 +60,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <html lang="en">
-      <body className={`font-sans antialiased`}>
-        {children}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-28QC2761L0" />
-        <Script id="google-analytics">
-            {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-28QC2761L0');
-        `}
-        </Script>
-      </body>
-    </html>
-  )
+    return (
+        <html lang="en" className={_geist.className}>
+            <body className={`antialiased ${_geistMono.className}`}>
+                {children}
+                <Script src="https://www.googletagmanager.com/gtag/js?id=G-28QC2761L0" />
+                <Script id="google-analytics">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                    
+                        gtag('config', 'G-28QC2761L0');
+                    `}
+                </Script>
+            </body>
+        </html>
+    )
 }
